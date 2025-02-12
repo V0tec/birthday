@@ -1,0 +1,29 @@
+[
+    {
+      "userName": "Иван Иванов",
+      "data": "12/05/1990",
+      "gender": "male"
+    },
+    {
+      "userName": "Мария Смирнова",
+      "data": "25/08/1992",
+      "gender": "female"
+    },
+    {
+      "userName": "Алексей Петров",
+      "data": "03/11/1985",
+      "gender": "male"
+    },
+    {
+      "userName": "Екатерина Кузнецова",
+      "data": "17/02/1996",
+      "gender": "female"
+    },
+    {
+      "userName": "Дмитрий Соколов",
+      "data": "30/01/1988",
+      "gender": "male"
+    }
+  ]
+
+  

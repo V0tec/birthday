@@ -1,0 +1,285 @@
+body {
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.mainTitle {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+@media (max-width: 1280px) {
+  .mainTitle {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .usersTable {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .usersTable input[type="text"] {
+    width: 100%;
+  }
+
+  .usersTable button {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .usersTable span {
+    display: none;
+  }
+
+  .usersTable th,
+  .usersTable td {
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  .usersTable ul li {
+    padding: 2px 4px;
+    font-size: 12px;
+  }
+
+  .usersTable ul li span {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .usersTable button {
+    width: 150px;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(45deg, #ff7b00, #cc6f18);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+header img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.usersForm,
+.usersTable {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.usersForm h2,
+.usersTable h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+  text-align: center;
+}
+
+.usersForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__radio {
+    display: flex;
+  }
+}
+
+.usersForm input,
+.usersForm select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.usersForm input:focus,
+.usersForm select:focus {
+  border-color: #ff7b00;
+  outline: none;
+}
+
+.usersForm div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.usersForm select {
+  flex: 1;
+}
+
+.usersForm label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.usersForm input[type="radio"] {
+  margin: 5px;
+}
+
+.usersForm button,
+.usersTable button {
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(45deg, #ff7b00, #cc6f18);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.usersForm button:hover,
+.usersTable button:hover {
+  background: linear-gradient(45deg, #cc6f18, #a55c14);
+}
+
+.usersTable button {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+.usersTable button:last-child {
+  background: #dc3545;
+}
+
+.usersTable button:last-child:hover {
+  background: #c82333;
+}
+
+.usersTable table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.usersTable th,
+.usersTable td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+
+.usersTable td:last-child button:first-child {
+  margin-bottom: 3px;
+}
+
+.usersTable th {
+  background: linear-gradient(45deg, #ff7b00, #cc6f18);
+  color: white;
+  font-weight: bold;
+}
+
+.usersTable tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.usersTable tbody tr:hover {
+  background: #e9ecef;
+}
+
+.usersTable button {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: white;
+  background: linear-gradient(45deg, #ff7b00, #cc6f18);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.usersTable button:hover {
+  background: linear-gradient(45deg, #cc6f18, #a55c14);
+}
+
+.usersTable button:last-child {
+  background: #dc3545;
+}
+
+.usersTable button:last-child:hover {
+  background: #c82333;
+}
+
+.usersTable ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.usersTable ul li {
+  background: #ffe5cc;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(45deg, #ff7b00, #cc6f18);
+  border-radius: 10px;
+}
+
+.usersTable input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.usersTable input[type="text"]:focus {
+  border-color: #ff7b00;
+  outline: none;
+}
+
+.usersTable select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.usersTable select:focus {
+  border-color: #ff7b00;
+  outline: none;
+}
